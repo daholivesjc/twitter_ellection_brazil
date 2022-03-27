@@ -1,0 +1,4 @@
+https://skeptric.com/python-offline-translation/
+https://github.com/argosopentech/argos-translate/
+https://huggingface.co/docs/transformers/main/en/main_classes/pipelines#transformers.pipeline
+https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux

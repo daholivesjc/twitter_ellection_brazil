@@ -1,0 +1,15 @@
+pandas
+spyder
+prettyconf
+torch
+transformers
+nltk
+matplotlib
+seaborn
+wordcloud
+textblob
+fastparquet
+deep_translator
+flair
+spacy
+unidecode
