@@ -59,9 +59,6 @@ dataframe = dataframe[dataframe["text_clean"]!='']
 # remove new duplicated
 dataframe.drop_duplicates(inplace=True,subset=["text"], keep="last")
 
-# render the dataframe by chunks
-# chunks = [dataframe["text_clean"][x:x+1000] for x in range(0, dataframe["text_clean"].count(), 1000)]
-
 # reindex dataframe 
 dataframe = dataframe.reset_index().rename(columns={"index":"remove"})
 

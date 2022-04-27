@@ -15,24 +15,10 @@ from helpers import (
 )
 import nltk
 import spacy
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-nltk.download('rslp')
-nltk.download('averaged_perceptron_tagger')
-nlp = spacy.load("pt_core_news_lg")
-
-# Definindo os estilos dos gráficos
-# %matplotlib inline
-# plt.style.use('fivethirtyeight')
+from datetime import datetime, timedelta
 
 # Ignorando os avisos
 warnings.filterwarnings('ignore')
-
-# dataframe tweets
-dataframe = pd.read_parquet("/home/daholive/Documents/twitter_ellection_brazil/datasource/tweets_preprocessing.parquet")
-
-dataframe['flair_sentiment_accuracy'] = pd.to_numeric(dataframe['flair_sentiment_accuracy'],errors='coerce')
 
 """
 Perguntas de negocios:
@@ -73,6 +59,40 @@ Perguntas de negocios:
         x % candidato c
 
 """
+# dataframe tweets
+dataframe = pd.read_parquet("/home/daholive/Documents/twitter_ellection_brazil/datasource/trs/tweets_preprocessing.parquet")
+
+def map_workweek(dt):
+    
+    # 21 a 25 fev
+    # 14 a 18 mar
+    # 21 a 25 mar
+
+    week = ""    
+
+    if (dt >= datetime(2022,2,21)) & (dt <= datetime(2022,2,25)):
+        week = "21/fev a 25/fev"
+    elif (dt >= datetime(2022,3,14)) & (dt <= datetime(2022,3,18)):
+        week = "14/mar a 18/mar"
+    elif (dt >= datetime(2022,3,21)) & (dt <= datetime(2022,3,25)):
+        week = "21/mar a 25/mar"
+    
+    return week
+
+dataframe["week"] = dataframe["created_at_tz"].apply(lambda x: map_workweek(x))
+
+dataframe = dataframe[dataframe["week"]!=""]
+
+
+df = dataframe.groupby(["query","week"]).agg({
+    "twitter_id":"nunique",
+    "bert_sentiment_level": "nunique"
+}).reset_index()
+
+
+
+
+
 ###############################################################################
 # Total de tweets por candidato
 # incluir o periodo dos dados no grafico

@@ -133,6 +133,7 @@ dmypy.json
 
 # dataframe
 dataframe/
+datasource/
 *.pkl
 *.zip
 *.parquet

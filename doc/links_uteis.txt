@@ -1,4 +1,33 @@
 https://skeptric.com/python-offline-translation/
 https://github.com/argosopentech/argos-translate/
 https://huggingface.co/docs/transformers/main/en/main_classes/pipelines#transformers.pipeline
+https://huggingface.co/docs/transformers/main/en/quicktour#pipeline
 https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux
+https://www.thepythoncode.com/article/finetuning-bert-using-huggingface-transformers-python
+https://www.thepythoncode.com/article/pretraining-bert-huggingface-transformers-in-python
+https://skimai.com/fine-tuning-bert-for-sentiment-analysis/
+https://stackoverflow.com/questions/66901005/how-can-i-calculate-all-recall-accuracy-precision-and-f1-measure-for-multi-class
+https://gitcode.net/greenplum/transformers/-/tree/model-parallelism/model_cards/nlptown/bert-base-multilingual-uncased-sentiment
+https://www.kaggle.com/datasets/augustop/portuguese-tweets-for-sentiment-analysis?resource=download
+https://stackabuse.com/python-for-nlp-sentiment-analysis-with-scikit-learn/
+https://www.kaggle.com/datasets/augustop/portuguese-tweets-for-sentiment-analysis?resource=download&select=TweetsWithTheme.csv
+https://www.kaggle.com/code/nithilaa/pycaret-using-tfidf/notebook
+python transformers fine tune pipeline
+
+https://github.com/sergiovirahonda/TweetsSentimentAnalysis/blob/main/TweetsSentimentPredictions.ipynb
+https://github.com/wsmenezes/TCC_IA_ML
+https://huggingface.co/neuralmind/bert-base-portuguese-cased?text=quando+eu+estou+%5BMASK%5D+feliz
+https://www.oreilly.com/library/view/learning-tensorflow/9781491978504/
+https://towardsdatascience.com/an-easy-tutorial-about-sentiment-analysis-with-deep-learning-and-keras-2bf52b9cba91
+https://medium.com/data-hackers/como-usar-pipelines-no-scikit-learn-1398a4cc6ae9
+https://www.tensorflow.org/api_docs/python/tf/keras/metrics
+https://stackoverflow.com/questions/37213388/keras-accuracy-does-not-change
+https://www.tensorflow.org/tutorials/keras/save_and_load
+https://forums.developer.nvidia.com/t/cuda-install-unmet-dependencies-cuda-depends-cuda-10-0-10-0-130-but-it-is-not-going-to-be-installed/66488/5
+https://www.tensorflow.org/install/gpu
+https://towardsdatascience.com/time-series-forecasting-with-pycaret-regression-module-237b703a0c63
+https://www.linkedin.com/posts/profile-moez_time-series-forecasting-with-pycaret-regression-activity-6877809176781893632-gqUX/
+https://github.com/fugue-project/fugue
+https://towardsdatascience.com/creating-pandas-and-spark-compatible-functions-with-fugue-8617c0b3d3a8
+https://towardsdatascience.com/scaling-pycaret-with-spark-or-dask-through-fugue-60bdc3ce133f
+conda install -c conda-forge lightgbm
